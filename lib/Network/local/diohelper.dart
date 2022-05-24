@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 
 class DioHelper {
-  static Dio? animiadio;
+  static Dio? modelsdio;
 
   static init() {
-    animiadio = Dio(
+    modelsdio = Dio(
       BaseOptions(
         baseUrl: "http://192.168.1.4:8000",
         receiveDataWhenStatusError: true,
@@ -16,6 +16,6 @@ class DioHelper {
     required String path,
     Map<String, dynamic>? queryPara,
   }) async {
-    return await animiadio!.get(path, queryParameters: queryPara);
+    return await modelsdio!.get(path, queryParameters: queryPara);
   }
 }
