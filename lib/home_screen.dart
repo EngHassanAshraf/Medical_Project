@@ -1,12 +1,9 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, avoid_unnecessary_containers, implementation_imports
 
 import 'package:easy_localization/src/public_ext.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:medical_project/check_disease.dart';
 import 'package:medical_project/drawer.dart';
-import 'package:medical_project/select_photo.dart';
 import 'package:medical_project/test_values.dart';
 import './generated/locale_keys.g.dart';
 

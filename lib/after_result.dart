@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, sized_box_for_whitespace, avoid_print
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, sized_box_for_whitespace, avoid_print, implementation_imports
 
 import 'package:easy_localization/src/public_ext.dart';
 import 'package:flutter/material.dart';
@@ -67,11 +67,11 @@ class _AfterResultState extends State<AfterResult> {
                         DioHelper.getData(
                           path: "/mainmodels/anemiaclassify/?",
                           queryPara: {
-                            "hemoglobin": widget.results[1].strValue.toString(),
-                            "mch": widget.results[3].strValue.toString(),
-                            "mchc": widget.results[4].strValue.toString(),
-                            "mcv": widget.results[2].strValue.toString(),
-                            "gender": widget.results[7].strValue.toString(),
+                            "hemoglobin": widget.results[1].strValue,
+                            "mch": widget.results[3].strValue,
+                            "mchc": widget.results[4].strValue,
+                            "mcv": widget.results[2].strValue,
+                            "gender": widget.results[7].strValue,
                           }
                           // "gender": isMale ? '0' : '1'
                           ,
@@ -113,10 +113,10 @@ class _AfterResultState extends State<AfterResult> {
                         DioHelper.getData(
                           path: "/mainmodels/covidclassify/?",
                           queryPara: {
-                            "wbc": widget.results[0].strValue.toString(),
-                            "mot": widget.results[6].strValue.toString(),
-                            "lyt": widget.results[5].strValue.toString(),
-                            "age": widget.results[8].strValue.toString(),
+                            "wbc": widget.results[0].strValue,
+                            "mot": widget.results[6].strValue,
+                            "lyt": widget.results[5].strValue,
+                            "age": widget.results[8].strValue,
                           },
                         ).then((value) {
                           print("\n\nSTATUS::::: ${value.statusCode}\n\n");

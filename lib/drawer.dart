@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, implementation_imports, use_key_in_widget_constructors
 
 import 'package:easy_localization/src/public_ext.dart';
 import 'package:flutter/cupertino.dart';

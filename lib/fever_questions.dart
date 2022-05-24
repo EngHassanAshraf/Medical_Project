@@ -37,7 +37,6 @@ class _FeverQuestionsState extends State<FeverQuestions> {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
     return Scaffold(
       endDrawer: DefaultDrawer(),
       appBar: AppBar(
